@@ -9,7 +9,7 @@ CITY_DATA = {'chicago': 'chicago.csv',
 # defining two function to make  DRY code
 def Get_Month():
     """
-    this function take no arrges
+    this function take no arrguments 
     Returns:
         (str) month - name of the month to filter by
     """
@@ -22,7 +22,7 @@ def Get_Month():
                        5: 'May',
                        6: 'June'}
 
-        Month_input = input("write Number of the Month you want, choose from 1 to 6\nwhich 1 is January\n")
+        Month_input = input("Enter Number of the Month you want, choose from 1 to 6\nwhich 1 for January\n")
         # check the input of month
         while Month_input not in ['1', '2', '3', '4', '5', '6']:
             Month_input = input("Please choose from 1 to 6\n")
@@ -49,7 +49,7 @@ def Get_Day():
                      6: 'Saturday',
                      7: 'Sunday'}
 
-        Day_input = input("write Number of the Day you want, choose from 1 to 7\nwhich 1 is Monday\n")
+        Day_input = input("Enter Number of the Day you want, choose from 1 to 7\nwhich 1 for Monday\n")
         # check the input of day
         while Day_input not in ['1', '2', '3', '4', '5', '6', '7']:
             Day_input = input("Please ente a number from 1 to 7\n")
